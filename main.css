@@ -14,12 +14,16 @@ nav .deets-icon {
   height: 66px;
 }
 
+nav .links {
+  margin-inline-end: auto;
+}
+
 .navbar .nav-link {
   transition: 0.3s;
 }
 
 .navbar .nav-link:hover {
-  color: rgba(212, 212, 212, 0.80) ;
+  color: rgba(212, 212, 212, 0.80);
 }
 
 nav .nav-btns a:first-child {
@@ -48,6 +52,45 @@ nav .nav-btns a:last-child:hover {
   nav .header {
     padding: 45px;
   }
+
+  nav .links .nav-link {
+    position: relative;
+    text-align: center;
+    width: 95%;
+  }
+
+  nav .links .nav-link::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 0.50);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+  }
+
+  nav .links .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+  }
+
+  nav .links .nav-link:hover:before {
+    width: 100%;
+  }
+
+  nav .nav-btns {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 @media(max-width: 771px) {
@@ -60,7 +103,6 @@ nav .nav-btns a:last-child:hover {
 @media(max-width: 700px) {
   .nav-btns {
     flex-direction: row;
-    align-items: center;
   }
 
   .nav-btns a:first-of-type {
@@ -71,7 +113,6 @@ nav .nav-btns a:last-child:hover {
 @media(max-width: 553px) {
   nav .header {
     padding: 5px 15px 15px 15px;
-    justify-content: center !important;
   }
 
   nav .header .navbar-brand {
@@ -388,6 +429,7 @@ nav .nav-btns a:last-child:hover {
 .get a:hover {
   background-color: rgb(237, 237, 237) !important;
 }
+
 @media(max-width: 767px) {
   .get {
     margin: 34px !important;

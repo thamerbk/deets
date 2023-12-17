@@ -47,6 +47,19 @@ nav .nav-btns a:last-child:hover {
   background-color: rgb(237, 237, 237) !important;
 }
 
+.navbar button .bars {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar button .bars span {
+  content: "";
+  margin-bottom: 10px;
+  background-color: #f3f3f3;
+  height: 2px;
+  width: 100%;
+}
 
 @media(max-width: 991px) {
   nav .header {

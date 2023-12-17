@@ -23,7 +23,7 @@ nav .links {
 }
 
 .navbar .nav-link:hover {
-  color: rgba(212, 212, 212, 0.80);
+  color: rgba(212, 212, 212, 0.80) !important;
 }
 
 nav .nav-btns a:first-child {
@@ -475,7 +475,7 @@ nav .nav-btns a:last-child:hover {
 }
 
 .footer .media-links svg:hover {
-  color: rgb(53, 53, 53) !important;
+  color: rgb(74, 74, 74) !important;
 }
 
 .links ul {
@@ -491,7 +491,7 @@ nav .nav-btns a:last-child:hover {
 }
 
 .footer .links ul a:hover {
-  color: rgb(73, 73, 73);
+  color: rgb(95, 95, 95)
 }
 
 .footer .line {

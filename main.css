@@ -473,9 +473,16 @@ nav .nav-btns a:last-child:hover {
   padding-top: 100px;
   margin-bottom: 100px;
 }
-
+.footer .media-links svg {
+  width: 42px;
+  transition: 0.3s;
+}
 .footer .media-links svg:hover {
-  color: rgb(74, 74, 74) !important;
+  font-size: 37px;
+}
+
+.footer .media-links svg path {
+
 }
 
 .links ul {
@@ -488,10 +495,12 @@ nav .nav-btns a:last-child:hover {
   font-size: 13px;
   font-weight: 700;
   color: #222222;
+  transition: .2s;
 }
 
 .footer .links ul a:hover {
-  color: rgb(95, 95, 95)
+  color: rgb(95, 95, 95);
+  font-size: 14px;
 }
 
 .footer .line {

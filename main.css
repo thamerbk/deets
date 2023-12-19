@@ -481,9 +481,6 @@ nav .nav-btns a:last-child:hover {
   font-size: 37px;
 }
 
-.footer .media-links svg path {
-
-}
 
 .links ul {
   list-style: none;
@@ -513,9 +510,18 @@ nav .nav-btns a:last-child:hover {
   font-weight: 500;
 }
 
+@media(max-width: 991px) {
+  .footer .links>div {
+    flex-grow: 1;
+  }
+}
+
 @media(max-width: 767px) {
   .footer .logos {
     justify-content: center !important;
+  }
+  .footer .links>div:not(.links>div:first-of-type) {
+    flex-basis: 0;
   }
 }
 
